@@ -1,0 +1,221 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+
+    <meta http-equiv="Expires" content="0" />
+
+    <title>zt_control</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/zt_control.css" />
+</head>
+
+<body>
+
+    <div id="" class="z_control">
+        <div id="u0" class="ax_default">
+            <div id="u0_div" class=""></div>
+        </div>
+
+        <div id="u16" class="ax_default">
+            <div id="u16_text" class="text " style="left: 0px; width: 399px; transform-origin: 199.5px 18.5px 0px;">
+                <p><span class="topic">SZT-Web Control Interface</span></p>
+            </div>
+        </div>
+
+        <div id="u1" class="ax_default">
+            <div id="u1_div" class="">
+                <p><span>&nbsp; 卫星跟踪：<span id="l_sat"></span> / <span id="l_sat_a"></span> </span></p>
+
+                <p><span>&nbsp; 经&nbsp; &nbsp; &nbsp;&nbsp; 度：<span id="l_lon"></span></span>
+                    <span class="u1_div_left">Rtk&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;：<span id="rtk"></span></span>
+                    <!-- <span class="u1_div_left">点&nbsp; &nbsp; &nbsp;&nbsp; 云：<a id="point" href="point.html"
+                            target="_blank">point</a> </span> -->
+                </p>
+
+                <p><span>&nbsp; 纬&nbsp; &nbsp; &nbsp;&nbsp; 度：<span id="l_lat"></span></span>
+                    <span class="u1_div_left">存储位置：<span id="mem_location"></span> </span>
+                </p>
+
+                <p><span>&nbsp; 高&nbsp; &nbsp; &nbsp;&nbsp; 度：<span id="l_alt"></span>
+                        <span class="u1_div_left">远程连接：<span id="dns_status"></span> </span>
+                </p>
+
+                <p><span>&nbsp; 同步状态：<span id="l_sync"></span> </span>&nbsp;</span>
+                    <span class="u1_div_left">拍照数量：<span id="tri_tx_cnt"></span> &nbsp;&nbsp;</span>
+                </p>
+
+                <p><span>&nbsp; 系统电压：<span id="hk_u_in"></span> V</span>
+                    <span class="u1_div_left">系统存储：<span id="used_size1"></span> &nbsp;&nbsp; /&nbsp;&nbsp; <span id="total_size1"></span> &nbsp;
+                        GB</span>
+                </p>
+
+                <p><span>&nbsp; 系统温度：<span id="hk_t_dev"></span> ℃</span>
+                    <span class="u1_div_left">返回类型：<span id="lidar_return_type"></span>      
+                </p>
+
+            </div>
+        </div>
+<!--
+        <div id="u13" class="ax_default">
+            <div id="u13_div" class="">
+                <p><span>&nbsp; 开始角度：</span>
+                    <input id="u1_input" type="text" value="0" class="u_input">
+                    <button id="b7" type="button" class="u13_div_left button_1" disabled="true">刷新</button>
+                </p>
+
+                <p><span>&nbsp; 停止角度：</span>
+                    <input id="u2_input" type="text" value="360" class="u_input">
+                </p>
+
+                <p>
+                    <span>&nbsp; 返回类型：</span>
+                    <select id="u3_input" class="u_input">
+                        <option value=0 >Last Return</option>
+                        <option value=1 >Strongest Return</option>
+                        <option value=2 >Last Return + Strongest Return</option>
+                        <option value=3 >First Return</option>    
+                        <option value=4 >First Return + Last Return</option>
+                        <option value=5 >First Return + Strongest Return</option> 
+                    </select>
+                    <button id="b8" type="button" class="u13_div_left button_1" disabled="true">设置</button>
+                </p>
+
+                <p>
+                    <span>&nbsp; 转&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;速：</span>
+                    <select id="u4_input" class="u_input">
+                        <option value=1>300</option>
+                        <option value=2>600</option>
+                        <option value=3>1200</option>
+                    </select>
+                    <button id="b14" type="button" class="u13_div_left button_1" disabled="true">保存</button>
+                </p>    
+
+                <p>
+                    &nbsp; &nbsp; &nbsp;
+                    <button id="b9" type="button" class="button_2" disabled="true">关机</button>
+                    &nbsp; &nbsp; &nbsp;
+                    <button id="b10" type="button" class="button_2" disabled="true">重启</button>
+                    &nbsp; &nbsp; &nbsp;
+                    <button id="b11" type="button" class="button_2" disabled="true">清错</button>
+                </p>
+
+            </div>
+        </div>
+-->
+        <div id="u13" class="ax_default">
+            <img id="u13_img" class="img " src="/images/ztlogo.png"  height="200" width="300">
+        </div>
+        
+        <div id="u12" class="ax_default">
+            <div id="u12_div" class="">
+                <p><span>&nbsp; 触发极性：</span>
+                    <select id="u9_input" class="u_input">
+                        <option value="positive">Positive</option>
+                        <option selected="" value="negative">Negative</option>
+                    </select>
+
+                    <button id="b12" type="button" class="u13_div_left button_5" disabled="true">刷新</button>
+
+                </p>
+
+                <p><span>&nbsp; 脉冲宽度：</span>
+                    <input id="u6_input" type="text" value="30" class="u_input"> ms
+                </p>
+
+                <p><span>&nbsp; 触发间隔：</span>
+                    <input id="u8_input" type="text" value="2000" class="u_input"> ms
+                    <button id="b13" type="button" class="u13_div_left button_5" disabled="true">拍照</button>
+                </p>
+            </div>
+        </div>
+
+        <div id="u10" class="ax_default primary_button">
+            <p><button id="b1" type="button" class="button_3" disabled="true">POS Start</button></p>
+        </div>
+
+        <div id="u11" class="ax_default primary_button">
+            <p><button id="b2" type="button" class="button_4" disabled="true">POS Stop</button></p>
+        </div>
+
+        <div id="u2" class="ax_default primary_button">
+            <p><button id="b3" type="button" class="button_3" disabled="true">Lidar Start</button></p>
+        </div>
+
+        <div id="u8" class="ax_default primary_button">
+            <p><button id="b4" type="button" class="button_4" disabled="true">Lidar Stop</button></p>
+        </div>
+
+        <div id="u9" class="ax_default primary_button">
+            <p><button id="b5" type="button" class="button_3" disabled="true">Camera Start</button></p>
+        </div>
+
+        <div id="u47" class="ax_default primary_button">
+            <p><button id="b6" type="button" class="button_4" disabled="true">Camera Stop</button></p>
+        </div>
+
+        <div id="u3" class="ax_default _图片_">
+            <img id="u3_img" class="img " src="/images/ztlogo.png">
+        </div>
+
+        <div id="u4" class="ax_default label">
+            <div id="u4_text" class="text " style="left: 10px; width: 73px; transform-origin: 36.5px 9px 0px;">
+                <p><span>产品型号：<span></p>
+            </div>
+        </div>
+
+        <div id="u6" class="ax_default label">
+            <div id="u6_text" class="text " style="left: -3px; width: 73px; transform-origin: 36.5px 9px 0px;">
+                <p><span>产品序号：</span> </p>
+            </div>
+        </div>
+
+        <div id="u5" class="ax_default text_field">
+            <input id="u5_input" type="text" value="" readonly="true">
+        </div>
+
+        <div id="u7" class="ax_default text_field">
+            <input id="u7_input" type="text" value="" readonly="true">
+        </div>
+
+        <div id="u15" class="ax_default label">
+            <div id="u15_div" class=""></div>
+            <div id="u15_text" class="text " style="left: 1px; width: 59px; transform-origin: 29.5px 9px 0px;">
+                <p><span>系统状态</span></p>
+            </div>
+        </div>
+
+<!--
+        <div id="u44" class="ax_default label">
+            <div id="u44_text" class="text " style="left: 0px; width: 59px; transform-origin: 29.5px 9px 0px;">
+                <p><span>激光参数</span></p>
+            </div>
+        </div>
+-->
+        <div id="u14" class="ax_default label">
+            <div id="u14_div" class=""></div>
+            <div id="u14_text" class="text " style="left: -1px; width: 59px; transform-origin: 29.5px 9px 0px;">
+                <p><span>相机触发</span></p>
+            </div>
+        </div>
+
+        <div class="locationset_div">
+            <button id="trigerlocation_bt" class="location_box inner" value="inner">内部触发</button>
+            <button id="storelocation_bt" class="location_box inner" value="inner">内部存储</button>
+        </div>
+
+    </div>
+
+    <script src="/control_js/jquery.min.js"></script>
+    <script src="/control_js/getstatus.js"></script>
+    <script src="/control_js/btnevent.js"></script>
+    <script src="/control_js/showstatus.js"></script>
+    <script src="/control_js/verify.js"></script>    
+
+</body>
+
+</html>
